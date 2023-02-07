@@ -48,3 +48,18 @@ channel = stable
 repo = mainsail-crew/mainsail
 path = ~/mainsail
 
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+
+[timelapse]
+output_path = ~/timelapse/
+frame_path = /tmp/timelapse/
+ffmpeg_binary_path = /usr/bin/ffmpeg
+enabled = True
+snapshoturl = http://localhost:8080/?action=snapshot
+autorender = True
+output_framerate = 30
+
